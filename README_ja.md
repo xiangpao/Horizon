@@ -12,9 +12,9 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![Tool uv](https://img.shields.io/badge/Tool-uv-4B275F?style=for-the-badge&logo=uv&logoColor=white)](https://github.com/astral-sh/uv)
 [![Website](https://img.shields.io/badge/Website-Horizon-263238?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.horizon1123.top/)
-[![Docs](https://img.shields.io/github/actions/workflow/status/Thysrael/Horizon/deploy-docs.yml?branch=main&label=Docs&style=for-the-badge&logo=githubactions&logoColor=white)](https://thysrael.github.io/Horizon/)
+[![Daily](https://img.shields.io/github/actions/workflow/status/Thysrael/Horizon/deploy-docs.yml?branch=main&label=Daily&style=for-the-badge&logo=githubactions&logoColor=white)](https://thysrael.github.io/Horizon/)
 [![Commit](https://img.shields.io/github/commit-activity/m/Thysrael/Horizon?label=Commit&style=for-the-badge&logo=github&logoColor=white)](https://github.com/Thysrael/Horizon/commits/main)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&logo=github&logoColor=white)](http://makeapullrequest.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Thysrael/Horizon/pulls)
 ![Sources Welcome](https://img.shields.io/badge/sources-welcome-f97316?style=for-the-badge&logo=rss&logoColor=white)
 
 ![Claude](https://img.shields.io/badge/Claude-f0daba?style=flat-square&logo=anthropic&logoColor=black)
