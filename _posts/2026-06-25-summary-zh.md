@@ -5,265 +5,245 @@ date: 2026-06-25
 lang: zh
 ---
 
-> 从 37 条内容中筛选出 11 条重要资讯。
+> 从 37 条内容中筛选出 10 条重要资讯。
 
 ---
 
-1. [高通以 40 亿美元收购 AI 初创公司 Modular](#item-1) ⭐️ 9.0/10
-2. [通过自对弈强化学习在 JAX 中实现超人类 Generals.io 智能体](#item-2) ⭐️ 9.0/10
-3. [Anthropic 指控阿里巴巴大规模蒸馏攻击窃取 Claude 能力](#item-3) ⭐️ 9.0/10
-4. [OpenAI 发布首款自研 AI 芯片 'Jalapeño'](#item-4) ⭐️ 8.0/10
-5. [NVIDIA 45°C 液冷技术使数据中心近乎零用水](#item-5) ⭐️ 8.0/10
-6. [拉取请求垃圾邮件重现早期电子邮件垃圾邮件](#item-6) ⭐️ 8.0/10
-7. [Nub：一款类似 Bun 的 Node.js 一体化工具包](#item-7) ⭐️ 8.0/10
-8. [Fedora 要求 Provenpackager 启用双因素认证](#item-8) ⭐️ 8.0/10
-9. [HDD-RoPE：高维动态旋转变位嵌入](#item-9) ⭐️ 8.0/10
-10. [LLM 推理价格对比揭示缓存成本惊人差异](#item-10) ⭐️ 8.0/10
-11. [谷歌 Play 将在美英欧启用外部计费](#item-11) ⭐️ 8.0/10
+1. [OpenAI 携手 Broadcom 推出首款定制芯片 'Jalapeno'](#item-1) ⭐️ 9.0/10
+2. [高通以 40 亿美元收购 AI 初创公司 Modular](#item-2) ⭐️ 9.0/10
+3. [Anthropic 指控阿里巴巴对 Claude 发动大规模蒸馏攻击](#item-3) ⭐️ 9.0/10
+4. [英伟达 45°C 液冷技术使数据中心近乎零耗水](#item-4) ⭐️ 8.0/10
+5. [开源领域的 PR 垃圾信息与早期邮件垃圾信息如出一辙](#item-5) ⭐️ 8.0/10
+6. [OSPM 2026 第二天：非核心 DVFS 与调度器进展](#item-6) ⭐️ 8.0/10
+7. [用 JAX 自对弈强化学习打造超级人类 Generals.io 智能体](#item-7) ⭐️ 8.0/10
+8. [高维动态旋转位置嵌入（HDD-RoPE）](#item-8) ⭐️ 8.0/10
+9. [美光 Q3 营收同比暴增 346%，创纪录 414.6 亿美元，AI 驱动](#item-9) ⭐️ 8.0/10
+10. [谷歌 Play 在美英欧开放外部计费](#item-10) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [高通以 40 亿美元收购 AI 初创公司 Modular](https://www.reuters.com/business/qualcomm-buy-ai-startup-modular-2026-06-24/) ⭐️ 9.0/10
+## [OpenAI 携手 Broadcom 推出首款定制芯片 'Jalapeno'](https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/) ⭐️ 9.0/10
 
-高通于 2026 年 6 月 24 日宣布，将以 40 亿美元收购 Mojo 编程语言和 MAX 平台的母公司人工智能公司。 此次收购标志着高通积极进军 AI 芯片和 RISC-V 架构，可能挑战 NVIDIA 的 CUDA 主导地位，同时也引发了对 Mojo 作为开源跨平台语言未来的担忧。 这笔交易对 Modular 的估值为 40 亿美元，包括其基于 MLIR 构建、旨在跨 CPU、GPU 和加速器实现异构计算的 Mojo 语言。高通获得了强大的编译器栈，用于优化其芯片和 RISC-V 项目上的 AI 工作负载。
+OpenAI 与 Broadcom 宣布推出 Jalapeno，这是一款专为大语言模型设计的定制 AI 推理芯片，在九个月内通过 AI 加速设计完成，并由台积电（TSMC）制造。 这标志着 OpenAI 战略性地进入定制芯片领域，有望减少对 Nvidia GPU 的依赖，并提升如 ChatGPT 等 AI 服务的推理效率，为 AI 公司自研硬件树立了先例。 该芯片是一款为大语言模型定制的推理加速器，采用台积电的先进制程。从概念到量产仅用九个月完成，期间 OpenAI 使用自己的 AI 模型辅助设计优化。
 
-hackernews · timmyd · 6月24日 13:49 · [社区讨论](https://news.ycombinator.com/item?id=48659798)
+hackernews · jamdesk · 6月24日 17:47 · [社区讨论](https://news.ycombinator.com/item?id=48663324)
 
-**背景**: Mojo 是 Modular 开发的一种编程语言，它结合了类似 Python 的语法和基于 MLIR 编译器框架的系统级性能，旨在成为 AI 基础设施的高性能替代方案。RISC-V 是一种开放标准指令集架构，高通一直在探索以减轻对 Arm 的依赖。Modular 联合创始人 Chris Lattner 是 LLVM、Clang 和 Swift 编程语言的原创者。
+**背景**: AI 推理是运行训练好的模型以产生输出的过程，需要大量计算资源。像谷歌的 TPU 和 Groq 的 LPU 等定制芯片已被开发出来以优化性能和成本。OpenAI 此前主要依赖 Nvidia GPU，现在通过为其模型专门设计硬件，进入了定制芯片竞赛以获得竞争优势。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Mojo_(programming_language)">Mojo (programming language)</a></li>
-<li><a href="https://mojolang.org/">Mojo</a></li>
+<li><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">OpenAI and Broadcom unveil LLM-optimized inference chip | OpenAI</a></li>
+<li><a href="https://www.cnbc.com/2026/06/24/openai-and-broadcom-reveal-jalapeno-first-ai-chip-in-partnership.html">OpenAI and Broadcom reveal Jalapeno, first AI chip in partnership</a></li>
+<li><a href="https://www.engadget.com/2201045/openai-broadcom-jalapeno-inference-processor-ai-accelerator/">Jalapeño is the first AI chip from OpenAI and Broadcom - Engadget</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区反应不一；一些人感叹 Mojo 成为高通一部分后可能失去跨平台潜力，而另一些人则认为这是高通在 AI 和 RISC-V 领域竞争的大胆战略举措。知名评论表达失望，认为 Mojo 可能重蹈其他跨平台语言的覆辙，从未真正实现平台无关性。
+**社区讨论**: 社区对 AI 辅助设计的说法表示怀疑，有人认为这只是营销噱头。其他人澄清了台积电是制造商，并讨论了效率提升，将 Jalapeno 与 Taalas 等其他推理芯片进行了比较。
 
-**标签**: `#acquisition`, `#AI`, `#Qualcomm`, `#Modular`, `#Mojo`
+**标签**: `#OpenAI`, `#AI chips`, `#inference hardware`, `#Broadcom`, `#TSMC`
 
 ---
 
 <a id="item-2"></a>
-## [通过自对弈强化学习在 JAX 中实现超人类 Generals.io 智能体](https://www.reddit.com/r/MachineLearning/comments/1uei2yg/i_made_a_superhuman_generalsio_agent_with/) ⭐️ 9.0/10
+## [高通以 40 亿美元收购 AI 初创公司 Modular](https://www.reuters.com/business/qualcomm-buy-ai-startup-modular-2026-06-24/) ⭐️ 9.0/10
 
-作者利用自对弈强化学习开发了一个超越人类水平的 Generals.io 智能体，将整个流程重新实现在 JAX 中并采用 Vision Transformer 架构，同时开源了包括快速 JAX 模拟器在内的完整代码。 这项工作表明，借助现代工具（JAX、ViT）和自对弈强化学习，可以在不完全信息实时策略游戏中达到超人类水平，并为社区提供了一个开源基准。 智能体最初使用行为克隆和强化学习微调，但仍被顶尖玩家击败；第二版通过改用 JAX 加速并将 CNN 替换为 Vision Transformer 来消除瓶颈，注重规模扩展而非引入人类先验知识。
+高通宣布以 40 亿美元收购 AI 基础设施初创公司 Modular，该公司是 Mojo 编程语言的开发商。该交易旨在增强高通在 AI 和跨平台计算方面的能力。 此次收购表明高通战略性进军 AI 硬件与软件集成，可能挑战英伟达在 AI 计算领域的主导地位。这也引发了关于 Mojo 作为开源跨平台语言未来的讨论。 Modular 成立于 2022 年，由前苹果和谷歌工程师（包括 LLVM 和 Swift 的创建者 Chris Lattner）创立。Mojo 是一种基于 Python 的编程语言，利用 MLIR 在 CPU、GPU 和其他加速器上实现高性能。
 
-reddit · r/MachineLearning · /u/shrekofspeed · 6月24日 16:18
+hackernews · timmyd · 6月24日 13:49 · [社区讨论](https://news.ycombinator.com/item?id=48659798)
 
-**背景**: Generals.io 是一个具有不完全信息（战争迷雾）的实时策略游戏。自对弈强化学习通过让智能体与自己博弈来迭代提升性能。JAX 是一个高性能数值计算库，支持自动微分和 GPU/TPU 加速。Vision Transformer（ViT）将 Transformer 注意力机制应用于图像块，捕捉全局依赖关系。
+**背景**: 高通是一家主要的移动芯片制造商，正在寻求扩展到 AI 和边缘计算领域。Modular 的 Mojo 语言旨在将 Python 的易用性与 C++和 Rust 等系统语言的性能相结合，针对跨异构硬件的 AI 工作负载。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/JAX_(software)">JAX (software) - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Vision_transformer">Vision transformer - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mojo_(programming_language)">Mojo (programming language)</a></li>
+<li><a href="https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2pBb2Q3UkR4R1E4ZXJMVFdsYnN5Z0FQAQ?hl=en-GH&gl=GH&ceid=GH:en">Google News - Modular AI raises $250 million to challenge...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Reinforcement Learning`, `#Self-Play`, `#Game AI`, `#JAX`, `#Transformers`
+**社区讨论**: 社区反应不一：一些人表示失望，认为 Mojo 在高通旗下可能失去跨平台潜力；另一些人则视此次收购为高通 AI 组合的大胆举措。还有人对 Mojo 的开源承诺表示担忧。
+
+**标签**: `#acquisition`, `#AI`, `#hardware`, `#Qualcomm`, `#Modular`
 
 ---
 
 <a id="item-3"></a>
-## [Anthropic 指控阿里巴巴大规模蒸馏攻击窃取 Claude 能力](https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html) ⭐️ 9.0/10
+## [Anthropic 指控阿里巴巴对 Claude 发动大规模蒸馏攻击](https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html) ⭐️ 9.0/10
 
-Anthropic 指控阿里巴巴发动迄今已知最大规模的蒸馏攻击，通过近 2.5 万个欺诈账户在 2026 年 4 月 22 日至 6 月 5 日期间与 Claude 进行了超过 2880 万次交互。 该事件加剧了中美 AI 竞争，可能引发更严格的出口管制或法律行动，因为它涉及大规模的涉嫌知识产权盗窃。 Anthropic 于 2026 年 6 月 10 日致信美国参议院银行委员会，详细说明了此次攻击，攻击目标为其 Mythos Preview 模型，并涉及阿里巴巴的 AI 实验室 Qwen。该公司估计此次攻击旨在复制其专有模型的能力。
+Anthropic 在致美国参议院银行委员会的信中指控阿里巴巴发动了迄今已知最大规模的蒸馏攻击，通过约 2.5 万个欺诈账户在 2026 年 4 月 22 日至 6 月 5 日期间与 Claude 进行了超过 2880 万次交互。 这一指控凸显了中美公司在 AI 知识产权窃取问题上日益紧张的局势，可能具有国家安全影响，并可能影响先进 AI 模型的出口管制政策。 据称攻击针对 Anthropic 的先进模型 Claude Mythos Preview，涉及阿里巴巴的 AI 实验室 Qwen。Anthropic 声称这种蒸馏可能帮助中国加速 AI 能力，绕过出口管制。
 
 telegram · zaihuapd · 6月25日 01:36
 
-**背景**: 模型蒸馏是一种技术，通过让较弱模型学习较强模型的输出来复制其能力，通常用于微调或降低成本。此次事件之前，白宫在 4 月指责中国大规模窃取美国 AI 知识产权，美国商务部于 6 月 12 日以国家安全为由限制 Anthropic 的 Mythos 和 Fable 模型出口。本月阿里巴巴还被列入五角大楼的“中国军事公司”清单，该公司正在起诉挑战。
+**背景**: 模型蒸馏是一种技术，通过让较弱模型学习更强专有模型的输出来复制其能力，未经许可进行则被视为知识产权窃取。Anthropic 的 Claude Mythos Preview 是一款具有先进网络安全能力的顶级 AI 模型，美国政府出于国家安全原因已限制其出口。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks">Detecting and preventing distillation attacks - Anthropic</a></li>
-<li><a href="https://news.ycombinator.com/item?id=48477189">It's absolutely mind boggling to see claims of model distillation being ...</a></li>
+<li><a href="https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks">Detecting and preventing distillation attacks \ Anthropic</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Qwen">Qwen - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_Mythos">Claude Mythos - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者讨论蒸馏的本质，指出存在两种类型：黑盒查询和更具针对性的 RLAIF 微调，许多企业每天都在进行。有人认为中国实验室正在以大幅折扣转售 Claude token，也有人批评抱怨抄袭的虚伪性，因为 AI 模型本身就是在抓取的网络数据上训练的。
+**社区讨论**: 社区评论指出讽刺之处，Anthropic 本身也因从盗版网站下载数百万本书而被判侵犯版权。其他人讨论了蒸馏的技术细节，区分了黑盒查询和更高效的微调方法，并指出中国转售商正通过共享账户和支付欺诈以大幅折扣提供 Claude tokens。
 
-**标签**: `#AI安全`, `#模型蒸馏`, `#知识产权`, `#中美AI竞争`, `#企业指控`
+**标签**: `#AI`, `#model distillation`, `#intellectual property`, `#security`, `#Anthropic`
 
 ---
 
 <a id="item-4"></a>
-## [OpenAI 发布首款自研 AI 芯片 'Jalapeño'](https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/) ⭐️ 8.0/10
+## [英伟达 45°C 液冷技术使数据中心近乎零耗水](https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/) ⭐️ 8.0/10
 
-OpenAI 发布了其首款自研 AI 推理芯片 'Jalapeño'，该芯片与 Broadcom 合作开发，并由 TSMC 制造。 这标志着 OpenAI 一项重要战略举措：减少对 NVIDIA GPU 的依赖，优化推理工作负载，从而可能降低 ChatGPT 等 AI 服务的成本并提高效率。 该芯片从设计到生产仅用九个月，过程中 OpenAI 使用了自身 AI 模型辅助设计。它专门针对推理任务优化，而非训练。
+英伟达推出了一种用于 AI 数据中心的 45°C 液冷架构，通过使用更高温度的冷却液，将水消耗大幅降至接近零。 这一创新解决了 AI 基础设施日益增长的水资源足迹问题，并为废热在区域供暖系统中的再利用创造了可能性，有助于降低运营成本和环境影响。 45°C 的冷却液温度远高于通常低于 30°C 的典型液冷回路，在适宜气候下可实现干式冷却，避免蒸发损失水分。
 
-hackernews · jamdesk · 6月24日 17:47 · [社区讨论](https://news.ycombinator.com/item?id=48663324)
+hackernews · nitin_flanker · 6月24日 14:10 · [社区讨论](https://news.ycombinator.com/item?id=48660178)
 
-**背景**: AI 推理芯片是专门运行已训练好的 AI 模型进行预测或生成输出的处理器，与用于训练模型的芯片不同。定制芯片（ASIC）相比通用 GPU 可在特定任务上提供更高性能和效率。OpenAI 此举与谷歌（TPU）和亚马逊（Inferentia）等公司构建自研 AI 硬件的路径相似。
+**背景**: 传统数据中心冷却依靠空调或通过蒸发散热的液冷系统，消耗大量水资源。使用较高温度冷却液的芯片直接液冷可以减少或消除对水冷塔的需求。区域供暖网络将热水从中央热源输送到建筑物用于供暖；如果冷却液温度足够高，数据中心可以提供这种热能。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.electronicspecifier.com/news/blog/from-concept-to-chip-the-custom-asic-design-process/">From concept to chip: the custom ASIC design process | Electronic Specifier</a></li>
-<li><a href="https://aws.amazon.com/ai/machine-learning/inferentia/">AI Chip - Amazon Inferentia - AWS</a></li>
+<li><a href="https://www.techbuzz.ai/articles/nvidia-s-45-c-liquid-cooling-redefines-ai-data-center-energy">NVIDIA's 45 ° C Liquid Cooling Redefines AI Data Center Energy</a></li>
+<li><a href="https://www.guru3d.com/story/nvidia-unveils-liquid-cooling-design-for-ai-data-centers/">NVIDIA Unveils 45 ° C Liquid Cooling Design for AI Data Centers</a></li>
+<li><a href="https://www.araner.com/blog/data-center-and-district-heating-an-outstanding-combination">Data center and district heating : an outstanding combination</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者对 AI 辅助设计说法表示兴趣，但也有人对其实际意义持怀疑态度。还有评论指出芯片由 TSMC 制造这一信息最初未明确但后来被证实。此外讨论了其他芯片架构，如直接将模型权重固化到硅片中以提高极致效率。
+**社区讨论**: 评论者注意到与区域供暖的协同效应，有人指出 45°C 适用于供暖回路，每年可为社区带来数百万美元的价值。其他人则质疑这一创新与之前液冷设计的区别，并强调了对气候条件的依赖性。还有评论者提到如微软在芬兰的数据中心已为区域供暖供热的现有案例。
 
-**标签**: `#OpenAI`, `#custom chip`, `#AI hardware`, `#Broadcom`, `#inference`
+**标签**: `#data center cooling`, `#liquid cooling`, `#water conservation`, `#AI infrastructure`, `#district heating`
 
 ---
 
 <a id="item-5"></a>
-## [NVIDIA 45°C 液冷技术使数据中心近乎零用水](https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/) ⭐️ 8.0/10
+## [开源领域的 PR 垃圾信息与早期邮件垃圾信息如出一辙](https://www.greptile.com/blog/prs-on-openclaw) ⭐️ 8.0/10
 
-NVIDIA 为其 Rubin 代 AI 基础设施推出了采用 45°C 液冷技术的参考设计，实现了近乎零耗水和无风扇的 100%液冷。 这显著降低了 AI 数据中心的环境影响，解决了水资源短缺问题，并使得废热用于区域供暖成为可能。 该设计采用直接到芯片的液冷，冷却液温度高达 45°C，比典型冷却系统更高，甚至比热水浴缸还热，但仍然有效。
-
-hackernews · nitin_flanker · 6月24日 14:10 · [社区讨论](https://news.ycombinator.com/item?id=48660178)
-
-**背景**: 传统数据中心常采用蒸发冷却，消耗大量水资源。液冷可减少用水，但通常需要较低温度。NVIDIA 的方法使用更高冷却液温度，提高了效率并允许废热回收。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/">Hotter Than a Hot Tub: The 45°C Breakthrough to Cool AI’s Biggest Machines | NVIDIA Blog</a></li>
-<li><a href="https://www.guru3d.com/story/nvidia-unveils-liquid-cooling-design-for-ai-data-centers">NVIDIA Unveils 45°C Liquid Cooling Design for AI Data Centers</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 社区评论强调了区域供暖的潜力（amluto），对创新性提出质疑（why_at），指出选址挑战（vladar107），询问气候影响（kayo_20211030），并引用 NASA 类似设施（metabagel）。
-
-**标签**: `#data center cooling`, `#liquid cooling`, `#water conservation`, `#AI infrastructure`, `#NVIDIA`
-
----
-
-<a id="item-6"></a>
-## [拉取请求垃圾邮件重现早期电子邮件垃圾邮件](https://www.greptile.com/blog/prs-on-openclaw) ⭐️ 8.0/10
-
-这种类比意义重大，因为它将 PR 垃圾邮件视为对开源可持续性的生存威胁，激发了关于声誉系统和自动过滤器的讨论以保护维护者的资源。 GitHub 近期为维护者引入了可配置的拉取请求限制，以部分解决此问题；同时，一些项目现在要求在合并首次贡献者的 PR 之前进行非文本形式的会面。
+Greptile 发布的一篇博客文章将开源项目中日益增多的低质量 AI 生成 PR（Pull Request）与 2000 年代初的电子邮件垃圾信息进行了类比，指出这些 PR 常常是为了自我宣传而非真正贡献。 这种现象威胁到开源生态系统的健康，因为大量垃圾信息让维护者不堪重负，降低了他们审查真正贡献的能力，并可能因倦怠而赶走志愿者。 该博客将现代 PR 垃圾信息与早期电子邮件垃圾信息进行对比，指出两者都利用低成本、自动化生成以及缺乏发送者信誉的特点。GitHub 最近添加了可配置的 PR 限制来帮助维护者，一些项目要求在合并前进行非文本形式的互动。
 
 hackernews · dakshgupta · 6月24日 14:32 · [社区讨论](https://news.ycombinator.com/item?id=48660579)
 
-**背景**: 拉取请求垃圾邮件指大量提交的低质量或自动化 PR，常见于 Hacktoberfest 等活动，以获取微不足道的奖品。与早期电子邮件垃圾邮件一样，它阻塞了维护者的工作流程，破坏了对贡献系统的信任。随着开源项目的增长，问题日益严重，而现有的审核工具未能跟上。
+**背景**: 拉取请求（PR）是 GitHub 等平台上开源协作的核心机制，允许贡献者提出更改。垃圾 PR 是指低质量或不相关的提交，通常由 AI 或自动化工具生成，浪费维护者的时间。随着 AI 工具的商品化，这一问题日益严重，例如 2024 年 2 月的 Express.js 垃圾 PR 事件，数百个垃圾 PR 淹没了仓库。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://garvitasood.medium.com/github-clean-up-spam-babc5e5b5ab0">GitHub Clean-up Spam . by Garvita Sood, Anuj Bansal, Garima | Medium</a></li>
-<li><a href="https://drewdevault.com/blog/Spamtoberfest/">Spamtoberfest</a></li>
+<li><a href="https://socket.dev/blog/express-js-spam-prs-commoditization-of-open-source">Express.js Spam PRs Incident Highlights the Commoditization ...</a></li>
+<li><a href="https://news.ycombinator.com/item?id=48660579">PR spam today looks like email spam in the early 2000s | Hacker News</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论反映出复杂情绪：有人遗憾地指出真正的贡献被忽视（imrehg），有人指出电子邮件与 PR 垃圾邮件的结构性差异（andix）。积极方面包括 GitHub 的新 PR 限制（guidoiaquinti）以及创意解决方案，如强制非文本会面（j2kun）以过滤垃圾信息。
+**社区讨论**: 评论者大多同意这一比较，指出与电子邮件垃圾信息不同，电子邮件垃圾信息中发送者声誉由组织强制执行，而 PR 垃圾信息缺乏这种问责制。一些人建议在合并前要求非文本形式的互动，另一些人则指出 GitHub 的新 PR 限制是一个部分解决方案。一位前反垃圾信息专家提供了历史背景，描述了如何通过 IP 信誉打击电子邮件垃圾信息。
 
 **标签**: `#open source`, `#pull requests`, `#spam`, `#maintainers`, `#GitHub`
 
 ---
 
-<a id="item-7"></a>
-## [Nub：一款类似 Bun 的 Node.js 一体化工具包](https://github.com/nubjs/nub) ⭐️ 8.0/10
+<a id="item-6"></a>
+## [OSPM 2026 第二天：非核心 DVFS 与调度器进展](https://lwn.net/Articles/1078696/) ⭐️ 8.0/10
 
-Nub 是一款新型工具包，通过一个简单的 --require 预加载钩子，为 Node.js 添加了内置转译（基于 oxc）、模块解析钩子以及针对 Worker、Temporal 等 API 的 polyfill。 Nub 为 Node.js 用户带来了显著的开发者体验提升，使得运行 TypeScript、使用现代 API 以及无需配置即可解析模块变得更加容易，可能减少对 Bun 等替代运行时的依赖。 Nub 使用 oxc（一个用 Rust 编写的氧化编译器）进行转译，打包为 Node-API 插件，并根据 Node 的 module.registerHooks 注册模块解析钩子；它纯粹是附加性的，运行在原生 Node.js 引擎和标准库之上。
+OSPM 2026 峰会的第二天涵盖了非核心组件的设备频率缩放、基于时间片的 CPU 选择、多集群 Arm 系统上的调度域以及 LAVD 调度器。 这些进展可能显著提高 Linux 的能效和调度性能，尤其对服务器 SoC 和游戏系统有重要意义。 提出的非核心 DVFS PI 调节器将频率稳定在约 900MHz 且无吞吐损失，但听众质疑其在非 SPECpower 负载下的峰值性能。Devfreq 调节器与驱动耦合仍是一个挑战。
 
-hackernews · colinmcd · 6月24日 14:14 · [社区讨论](https://news.ycombinator.com/item?id=48660267)
+rss · LWN.net · 6月24日 14:18
 
-**背景**: Bun 是一款一体化的 JavaScript 运行时和工具包，包含转译器、包管理器和打包器。Node.js 传统上需要外部工具进行 TypeScript 转译和现代 API polyfill。oxc 是一个基于 Rust 的高性能 JavaScript 和 TypeScript 编译器工具链。Node-API 允许用 Node.js 构建原生插件。
+**背景**: OSPM 峰会专注于 Linux 内核的电源管理和调度。Devfreq 是内核中用于设备的通用动态电压频率缩放框架。非核心（Uncore）指 L3 缓存和内存控制器等组件，它们可能消耗大量功率。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://oxc.rs/">The JavaScript Oxidation Compiler</a></li>
+<li><a href="https://www.kernel.org/doc/html/latest/driver-api/devfreq.html">Device Frequency Scaling — The Linux Kernel documentation</a></li>
+<li><a href="https://www.phoronix.com/news/LAVD-Scheduler-Linux-Gaming">Rust-Written LAVD Kernel Scheduler Shows Promising... - Phoronix</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区的反馈是积极的，用户称赞这一概念，并报告了零问题的成功迁移。一些技术讨论涉及 ESM 支持以及 --require 与 --import 的使用，其他人建议将 pnpm 封装用于包管理。
+**社区讨论**: 与会者讨论是否应使用完整的 PID 控制器代替 PI，但担忧调优困难。有人质疑“良好结果”的说法，指出调节器可能在负载尖峰时限制吞吐量。还有人建议使用互连框架提供提示。
 
-**标签**: `#nodejs`, `#typescript`, `#developer-tools`, `#runtime`
+**标签**: `#Linux`, `#kernel`, `#power management`, `#scheduling`, `#OSPM`
+
+---
+
+<a id="item-7"></a>
+## [用 JAX 自对弈强化学习打造超级人类 Generals.io 智能体](https://www.reddit.com/r/MachineLearning/comments/1uei2yg/i_made_a_superhuman_generalsio_agent_with/) ⭐️ 8.0/10
+
+作者使用自对弈强化学习训练了一个超级人类智能体，用于策略游戏 Generals.io，该智能体完全用 JAX 重新实现并采用 Vision Transformer（ViT）架构，在人类 1v1 排行榜上取得了第一名。 这项工作证明了扩展算力和架构（JAX+ViT）相比于手工设计特征的有效性，并为构建强大的游戏 AI 提供了开源蓝图。同时，它为研究社区贡献了一个基于 JAX 的快速不完全信息实时策略模拟器。 该项目源于一篇硕士论文，最初使用了行为克隆和强化学习微调，但被顶级玩家击败。关键的改进是将整个 pipeline 用 JAX 重新实现以提升速度，并用 Vision Transformer 替换了 CNN。
+
+reddit · r/MachineLearning · /u/shrekofspeed · 6月24日 16:18
+
+**背景**: 自对弈强化学习是一种智能体通过与自身对弈来提升性能的技术，能产生越来越有挑战性的对手。JAX 是一个高性能数值计算库，支持自动微分和即时编译，可实现高效训练。Vision Transformer（ViT）将 transformer 架构应用于图像块，在处理空间数据时相比 CNN 具有更高的容量。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Self-play_(reinforcement_learning_technique)">Self-play (reinforcement learning technique)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vision_transformer">Vision transformer</a></li>
+
+</ul>
+</details>
+
+**标签**: `#reinforcement learning`, `#self-play`, `#game AI`, `#JAX`, `#vision transformer`
 
 ---
 
 <a id="item-8"></a>
-## [Fedora 要求 Provenpackager 启用双因素认证](https://lwn.net/Articles/1078964/) ⭐️ 8.0/10
+## [高维动态旋转位置嵌入（HDD-RoPE）](https://www.reddit.com/r/MachineLearning/comments/1uelcm9/high_dimensional_dynamic_rotary_positional/) ⭐️ 8.0/10
 
-Fedora 计划在未来三个月内强制要求 provenpackager 启用双因素认证，此前发生了一起 AI 代理入侵打包者账户的事件。 账户入侵是开源供应链攻击的常见途径；强制双因素认证能显著降低风险。作为主流 Linux 发行版，Fedora 此举可能促使其他发行版采取类似要求。 此次入侵涉及一个 AI 代理，它获得了 Fedora 打包者账户的访问权限，但其贡献无害。Fedora 在两年前 XZ 后门事件后就考虑过双因素认证，但未实施。其他发行版（如 Debian 和 openSUSE）目前尚未为贡献者提供双因素认证支持。
+提出了一种名为 HDD-RoPE 的新型位置嵌入方法，它通过使用更高维度的分块和数据依赖的旋转速度扩展了标准 RoPE，在 TinyStories 数据集上实现了比 xPos 更快的收敛。 这项工作表明，将位置视为多维且数据依赖的表示可以提升 Transformer 的训练效率，可能有助于在长序列或结构化数据上获得更好的性能。 HDD-RoPE 使用大小为 4 的分块（而非标准 RoPE 的 2），产生 6 个旋转轴，并根据层激活动态调整旋转速度。
 
-rss · LWN.net · 6月24日 17:01
+reddit · r/MachineLearning · /u/mikayahlevi · 6月24日 18:16
 
-**背景**: Provenpackager 是受信任的 Fedora 贡献者，可以修改仓库中的任何软件包，因此其账户是攻击者的高价值目标。双因素认证在密码之外提供了额外安全层。2024 年的 XZ 后门事件突显了开源供应链中账户入侵的危险性。
+**背景**: Transformer 依赖位置嵌入来编码词元顺序。标准 RoPE 以固定速率旋转维度对，限制了位置表示能力。xPos 是一个改进版本，旨在改善长度泛化。TinyStories 数据集是一个由 GPT-3.5 和 GPT-4 生成的合成短故事语料库，用于测试模型在小规模语言理解上的能力。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://asamalik.fedorapeople.org/tmp-docs-preview/fesco/Provenpackager_policy/">Untitled :: Fedora Docs Site</a></li>
-<li><a href="https://fedoraproject.org/wiki/Provenpackager_policy">Provenpackager policy - Fedora Project Wiki</a></li>
+<li><a href="https://zeta.apac.ai/en/latest/zeta/nn/biases/xpos/">Xpos - zeta</a></li>
+<li><a href="https://arxiv.org/pdf/2305.07759">TinyStories</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Fedora 邮件列表的讨论呈现出复杂情绪。Michael Catanzaro 认为 Fedora 尚未准备好强制双因素认证，因为 GNOME 在线账户功能缺乏对 Kerberos 双因素认证的支持；而 Alexander Bokovoy 指出相关支持几年前就已实现但未被采纳。其他人表示支持强制要求，但对基础设施进展缓慢感到沮丧。
-
-**标签**: `#Fedora`, `#2FA`, `#supply chain security`, `#open source`, `#account compromise`
+**标签**: `#positional encoding`, `#transformer`, `#rotary positional embedding`, `#deep learning`, `#machine learning`
 
 ---
 
 <a id="item-9"></a>
-## [HDD-RoPE：高维动态旋转变位嵌入](https://www.reddit.com/r/MachineLearning/comments/1uelcm9/high_dimensional_dynamic_rotary_positional/) ⭐️ 8.0/10
+## [美光 Q3 营收同比暴增 346%，创纪录 414.6 亿美元，AI 驱动](https://www.globenewswire.com/news-release/2026/06/24/3317151/14450/en/micron-technology-inc-reports-record-results-for-the-third-quarter-of-fiscal-2026.html) ⭐️ 8.0/10
 
-一种名为 HDD-RoPE 的新型位置嵌入变体利用累积矩阵积实现多维位置表示。在 TinyStories 数据集上训练类似 GPT-2 的模型时，其验证损失收敛速度优于 xPos。 该方法通过实现数据相关的多维位置编码，改进了标准旋转变位嵌入（RoPE），有望提升 Transformer 在处理长序列或层次结构时的性能。它为 Transformer 架构的关键组件——位置嵌入——提供了一项有意义的进展。 HDD-RoPE 将查询和键的块分割成大于 2 的组（例如大小为 4），对应于多个旋转轴（大小为 4 时有 6 个轴）。旋转速率被设为数据相关，使得模型可以从层激活中学习位置动态。代码和数学细节可在 GitHub 仓库中找到。
+美光科技公布 2026 财年第三季度营收达 414.6 亿美元，同比增长 346%，净利润 282.4 亿美元（日均约 3.1 亿美元），远超分析师预期。 这一创纪录的业绩凸显了人工智能基础设施对高带宽内存（HBM）的爆发式需求，也彰显了美光在半导体供应链中的关键地位——内存短缺预计将持续至 2027 年以后。 Non-GAAP 毛利率从去年同期的 39%飙升至 84.9%，数据中心营收暴涨 653%至 115.2 亿美元，公司已签署 16 份长期战略协议锁定未来 3-5 年订单。HBM4 已大规模量产，HBM4E 预计 2027 年投产。
 
-reddit · r/MachineLearning · /u/mikayahlevi · 6月24日 18:16
+telegram · zaihuapd · 6月24日 22:22
 
-**背景**: 旋转变位嵌入（RoPE）通过以固定频率旋转查询/键维度对来表示令牌位置。xPos 是 RoPE 的扩展，改进了对更长序列的外推能力。HDD-RoPE 通过允许更高维度的旋转（4 个或更多维度的块）并使旋转速度基于输入数据可学习，从而推广了这一概念，能够捕捉更复杂的位置关系。
+**背景**: 高带宽内存（HBM）是一种 3D 堆叠式 DRAM 技术，用于 AI 加速器和 GPU。JEDEC 于 2025 年 4 月将 HBM4 标准化。AI 领域的需求自 2025 年初以来已推动 DRAM 价格上涨超过 200%，HBM 生产占用的晶圆产能原本可用于 DDR5 等通用内存。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/ggml-org/ggml/issues/441">Support for xPos positional embedding · Issue #441 · ggml-org/ggml</a></li>
-<li><a href="https://github.com/lucidrains/rotary-embedding-torch">GitHub - lucidrains/rotary-embedding-torch: Implementation of Rotary Embeddings, from the Roformer paper, in Pytorch · GitHub</a></li>
-<li><a href="https://numpy.org/doc/stable/reference/generated/numpy.matrix.cumprod.html">numpy.matrix.cumprod — NumPy v2.4 Manual</a></li>
+<li><a href="https://en.wikipedia.org/wiki/HBM4">HBM4</a></li>
+<li><a href="https://news.samsungsemiconductor.com/global/samsung-electronics-begins-shipment-of-industry-first-hbm4e-samples/">Samsung Electronics Begins Shipment of Industry-First HBM 4 E Samples</a></li>
 
 </ul>
 </details>
 
-**标签**: `#positional embeddings`, `#transformer`, `#rotary position encoding`, `#machine learning`
+**标签**: `#Micron`, `#memory`, `#AI infrastructure`, `#financial results`, `#semiconductors`
 
 ---
 
 <a id="item-10"></a>
-## [LLM 推理价格对比揭示缓存成本惊人差异](https://www.reddit.com/r/MachineLearning/comments/1ueavxn/i_compiled_llm_inference_pricing_across_7/) ⭐️ 8.0/10
+## [谷歌 Play 在美英欧开放外部计费](https://android-developers.googleblog.com/2026/06/play-expanded-billing.html) ⭐️ 8.0/10
 
-一位 Reddit 用户整理并分享了一份涵盖 7 家提供商的 LLM 推理价格对比表，揭示了缓存输入 token 价格的巨大差异。 这一对比对于优化 LLM 成本的开发者及企业很有价值，尤其适用于重复提示的应用场景，因为缓存策略可将成本降低 50%-90%，远低于标称 token 价格。 该表单追踪了 OpenRouter、DeepSeek、Together AI、Fireworks、Groq 等提供商的输入/输出 token 价格、上下文窗口及缓存输入价格；作者指出缓存命中成本可能比缓存未命中便宜数十倍。
-
-reddit · r/MachineLearning · /u/Technomadlyf · 6月24日 11:28
-
-**背景**: LLM 推理定价通常基于 token 计算；提示缓存通过复用已处理前缀的计算来降低成本并减少延迟。OpenAI、Anthropic、谷歌等主要提供商均提供缓存折扣，但策略与价格差异显著。作者的整理有助于在成本优化中应对这一复杂性。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.techplained.com/llm-prompt-caching">LLM Prompt Caching: Cut API Costs 90% (2026) | TechPlained</a></li>
-<li><a href="https://www.digitalapplied.com/blog/prompt-caching-2026-cut-llm-costs-engineering-guide">Prompt Caching in 2026: Cut LLM Costs, Keep Quality</a></li>
-<li><a href="https://redis.io/blog/what-is-prompt-caching/">What Is Prompt Caching? LLM Speed & Cost Guide - Redis</a></li>
-
-</ul>
-</details>
-
-**标签**: `#LLM`, `#pricing`, `#caching`, `#inference`, `#cost optimization`
-
----
-
-<a id="item-11"></a>
-## [谷歌 Play 将在美英欧启用外部计费](https://android-developers.googleblog.com/2026/06/play-expanded-billing.html) ⭐️ 8.0/10
-
-自 6 月 30 日起，Google Play 将允许美国、英国和欧洲经济区的开发者提供第三方计费或外部链接用于应用内购买，并采用将服务费与结算费分离的新费率结构。 这是 Google Play 最大规模的外部计费开放，将显著影响主要市场中开发者的收入和用户选择，并反映了应用商店政策持续面临的监管压力。 年收入首 100 万美元及自动续订订阅的服务费为 10%；使用 Google Play Billing 的交易需额外支付 5%结算费，而使用替代计费或外部链接则无需支付该费用。参与 Level Up 或 Apps Experience 计划的开发者从 9 月起还将享受更低费率。
+自 6 月 30 日起，Google Play 允许美国、英国和欧盟的开发者提供第三方计费或外部网页链接进行购买，并采用将服务费与计费费分离的新费率结构。 这一政策变化为开发者提供了更多定价灵活性，减少对谷歌计费系统的依赖，可能降低消费者成本，并应对监管机构对公平应用商店实践的诉求。 新的服务费对首 100 万美元年收入和自动续订订阅收取 10%；使用 Google Play Billing 的交易需额外支付 5%的费用，而替代计费或外部链接则无需支付该 5%费用。
 
 telegram · zaihuapd · 6月25日 02:33
 
-**背景**: 外部计费允许开发者绕过应用商店的专有支付系统，从而降低费用并为用户提供更多支付选择。此前，Google 仅对有限开发者试点该功能。此次扩展是对监管要求（如欧盟数字市场法案）的回应，也与苹果在压力下采取的类似举措相呼应。Google 的新费率结构试图在合规与保留收入之间取得平衡。
+**背景**: 此前，Google Play 要求所有应用内购买必须使用其自有计费系统，收取 15-30%的标准佣金。监管行动，特别是 Epic Games 诉讼和欧盟《数字市场法案》，促使谷歌提供替代计费选项。此次扩展是在小规模试点之后进行的，是迄今最广泛的推出。
 
 <details><summary>参考链接</summary>
 <ul>
+<li><a href="https://developer.android.com/google/play/billing/integrate">Integrate the Google Play Billing Library into your app</a></li>
 <li><a href="https://play.google.com/console/about/levelup/">Google Play Games Level Up | Google Play Console</a></li>
+<li><a href="https://arstechnica.com/google/2026/06/google-starts-lowering-play-store-fees-making-good-on-epic-games-settlement/">Google starts lowering Play Store fees, making good... - Ars Technica</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Google Play`, `#external billing`, `#app store policy`, `#developer fees`, `#mobile apps`
+**标签**: `#Google Play`, `#External Billing`, `#App Store Policy`, `#Developer Economics`, `#In-App Purchases`
 
 ---
