@@ -5,337 +5,265 @@ date: 2026-06-25
 lang: en
 ---
 
-> From 56 items, 14 important content pieces were selected
+> From 37 items, 11 important content pieces were selected
 
 ---
 
-1. [Anthropic accuses Alibaba of stealing Claude AI capabilities](#item-1) ⭐️ 9.0/10
-2. [OpenAI Unveils First Custom AI Chip 'Jalapeno'](#item-2) ⭐️ 9.0/10
-3. [Krea 2: Open-weights 12B image model achieves SOTA among local models](#item-3) ⭐️ 9.0/10
-4. [Gefen Optimizer Claims 8x Memory Reduction Over AdamW](#item-4) ⭐️ 9.0/10
-5. [Qualcomm Acquires Modular, Owner of Mojo Language](#item-5) ⭐️ 8.0/10
-6. [NVIDIA's 45°C Liquid Cooling Cuts Data Center Water Use Near Zero](#item-6) ⭐️ 8.0/10
-7. [PR spam in open source mirrors early email spam problem](#item-7) ⭐️ 8.0/10
-8. [Nub: A Bun-like toolkit for Node.js](#item-8) ⭐️ 8.0/10
-9. [Datasette 1.0a35 Adds Create/Alter Table APIs](#item-9) ⭐️ 8.0/10
-10. [KASAN Support for JIT-Compiled BPF Code](#item-10) ⭐️ 8.0/10
-11. [SDXL runs locally in browser via WebGPU](#item-11) ⭐️ 8.0/10
-12. [AMD Strix Halo NPU Now Usable for Hybrid LLM Inference](#item-12) ⭐️ 8.0/10
-13. [20x speedup on GLM5.2 via AWQ/FP8 merge and vLLM patch](#item-13) ⭐️ 8.0/10
-14. [Google Play to Launch External Billing in US, UK, EEA](#item-14) ⭐️ 8.0/10
+1. [Qualcomm Acquires AI Startup Modular for $4 Billion](#item-1) ⭐️ 9.0/10
+2. [Superhuman Generals.io agent via self-play RL in JAX](#item-2) ⭐️ 9.0/10
+3. [Anthropic Accuses Alibaba of Massive Distillation Attack on Claude](#item-3) ⭐️ 9.0/10
+4. [OpenAI Unveils First Custom AI Chip, Jalapeño](#item-4) ⭐️ 8.0/10
+5. [NVIDIA 45°C Liquid Cooling Nearly Eliminates Data Center Water Use](#item-5) ⭐️ 8.0/10
+6. [Pull Request Spam Echoes Early Email Spam](#item-6) ⭐️ 8.0/10
+7. [Nub: A Bun-like all-in-one toolkit for Node.js](#item-7) ⭐️ 8.0/10
+8. [Fedora to Require 2FA for Provenpackagers](#item-8) ⭐️ 8.0/10
+9. [HDD-RoPE: High-Dimensional Dynamic Rotary Positional Embedding](#item-9) ⭐️ 8.0/10
+10. [LLM Inference Pricing Comparison Reveals Surprising Caching Costs](#item-10) ⭐️ 8.0/10
+11. [Google Play to Enable External Billing in US, UK, EU](#item-11) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Anthropic accuses Alibaba of stealing Claude AI capabilities](https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/) ⭐️ 9.0/10
+## [Qualcomm Acquires AI Startup Modular for $4 Billion](https://www.reuters.com/business/qualcomm-buy-ai-startup-modular-2026-06-24/) ⭐️ 9.0/10
 
-Anthropic has publicly accused Alibaba of illicitly extracting capabilities from its Claude AI model, likely through model distillation techniques, raising concerns about intellectual property theft. This case highlights growing tensions over AI model security and IP theft between US and Chinese tech firms, potentially leading to stricter regulations and enforcement in the AI industry. Model distillation is a technique where a smaller 'student' model learns from a larger 'teacher' model's outputs, and Chinese labs may be using this to replicate Claude's capabilities without authorization.
-
-hackernews · htrp · Jun 24, 19:48 · [Discussion](https://news.ycombinator.com/item?id=48664814)
-
-**Background**: Model distillation, or knowledge distillation, is a machine learning technique where a smaller model is trained to mimic a larger, more capable model. It is commonly used for model compression and deployment on resource-constrained devices, but it can also be used to replicate proprietary models without permission.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Knowledge_distillation">Knowledge distillation - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters debate the ethics, with some noting the irony of Anthropic complaining about copying given that large models are trained on scraped internet data. Others point out that Chinese resellers are offering discounted Claude tokens and selling reasoning traces as training data, enabling distillation.
-
-**Tags**: `#AI`, `#Model Distillation`, `#Intellectual Property`, `#Anthropic`, `#Alibaba`
-
----
-
-<a id="item-2"></a>
-## [OpenAI Unveils First Custom AI Chip 'Jalapeno'](https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/) ⭐️ 9.0/10
-
-OpenAI announced its first custom AI inference chip named 'Jalapeno,' developed in collaboration with Broadcom and manufactured by TSMC, claiming it can reduce inference costs by up to 50%. This marks a significant shift for OpenAI from relying solely on general-purpose GPUs to custom hardware, potentially lowering operational costs and improving performance for its AI services, and could spur similar moves by other tech giants. The chip is optimized specifically for inference workloads, not training, and was developed from design to production in just nine months, with OpenAI's own models used to accelerate the design process.
-
-hackernews · jamdesk · Jun 24, 17:47 · [Discussion](https://news.ycombinator.com/item?id=48663324)
-
-**Background**: AI inference chips are specialized processors designed to run trained AI models efficiently, focusing on speed and cost-per-query rather than raw compute power used in training. General-purpose GPUs like NVIDIA's are commonly used for both training and inference, but custom chips can offer better efficiency for specific tasks.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.techtimes.com/articles/319012/20260624/openais-first-custom-ai-chip-targets-50-cheaper-inference-jalapeno-unveiled.htm">OpenAI's First Custom AI Chip Targets 50% Cheaper Inference...</a></li>
-<li><a href="https://naddod.medium.com/inference-chip-guide-the-foundation-of-scalable-ai-applications-d18f2c22b36c">Inference Chip Guide: The Foundation of Scalable AI Applications | by NADDOD | Medium</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters expressed curiosity about the role of OpenAI's models in chip design, with some skepticism that it might be marketing fluff. Others noted the chip is manufactured by TSMC and discussed the potential of fully hardcoded weight chips for even greater efficiency.
-
-**Tags**: `#AI hardware`, `#OpenAI`, `#custom chip`, `#inference`, `#Broadcom`
-
----
-
-<a id="item-3"></a>
-## [Krea 2: Open-weights 12B image model achieves SOTA among local models](https://www.krea.ai/blog/krea-2-technical-report) ⭐️ 9.0/10
-
-Krea has released the open-weights Krea 2 image model with a 12B parameter architecture, along with a comprehensive technical report detailing its training and data curation pipeline. The release includes two variants: Krea 2 RAW for fine-tuning and Krea 2 Turbo for fast text-to-image inference. Krea 2 achieves state-of-the-art performance among locally hostable image generation models, scoring just below the proprietary Ideogram 4 but with much faster inference. This opens up high-quality image synthesis to a wider audience and benchmarks as the best open-weights model in its class. The Turbo model uses both guidance and timestep distillation, enabling high-quality outputs in as few as 8 sampling steps. Community benchmarks show Krea 2 outperforming all other locally hostable models, with Ideogram 4 being the only exception, but taking minutes compared to seconds for Krea 2.
-
-hackernews · mattnewton · Jun 23, 15:31 · [Discussion](https://news.ycombinator.com/item?id=48646659)
-
-**Background**: Open-weights models make the trained parameters publicly available, enabling developers to fine-tune and deploy them locally without relying on closed APIs. Krea 2 is an image foundation model trained from scratch by Krea AI, focusing on stylistic diversity and creative control. The model is designed to be run on consumer hardware, making advanced AI image generation more accessible.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.krea.ai/krea-2-open-source">Krea 2 Open-Source: RAW and Turbo Image Models</a></li>
-<li><a href="https://github.com/krea-ai/krea-2">GitHub - krea-ai/krea-2: Official inference code for Krea 2 · GitHub</a></li>
-<li><a href="https://opensource.org/ai/open-weights">Open Weights: not quite what you’ve been told</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Community reactions are highly positive, with praise for the detailed technical report and the model's performance. Some commenters note that while Krea 2 excels in text-to-image, it may be 'fighting the past war' as advanced image-to-image and agentic composition models emerge. Others highlight the Turbo variant's speed and quality trade-off.
-
-**Tags**: `#AI`, `#image generation`, `#open weights`, `#text-to-image`, `#machine learning`
-
----
-
-<a id="item-4"></a>
-## [Gefen Optimizer Claims 8x Memory Reduction Over AdamW](https://www.reddit.com/r/LocalLLaMA/comments/1uep96s/gefen_is_a_dropin_replacement_for_the_adamw/) ⭐️ 9.0/10
-
-A new optimizer called Gefen has been released as a drop-in replacement for AdamW, claiming an 8x reduction in training memory by sharing second-moment estimates and quantizing the first moment. If validated, Gefen could significantly lower the hardware barrier for training large deep learning models, as AdamW is widely used and its memory overhead is a key bottleneck. Gefen automatically shares second-moment estimates across parameter blocks and uses a learned codebook to quantize the first moment, achieving memory savings with minimal accuracy loss.
-
-reddit · r/LocalLLaMA · /u/indicava · Jun 24, 20:39
-
-**Background**: AdamW is a default optimizer in modern deep learning that stores two momentum buffers per parameter, each the size of the model weights, doubling memory usage for optimizer states. Gefen reduces this overhead by sharing and quantizing these buffers.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://pypi.org/project/gefen/">Gefen optimizer for memory-efficient PyTorch training</a></li>
-<li><a href="https://arxiv.org/abs/2606.13894">[2606.13894] Gefen : Optimized Stochastic Optimizer</a></li>
-<li><a href="https://nefut.com/article/996-csai-gefen-optimized-stochastic-optimizer-with-8x-memory-reduction">[CS.AI] Gefen : Optimized Stochastic Optimizer with 8x Mem... - Nefut</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#optimizer`, `#memory reduction`, `#deep learning`, `#training efficiency`, `#AdamW`
-
----
-
-<a id="item-5"></a>
-## [Qualcomm Acquires Modular, Owner of Mojo Language](https://www.reuters.com/business/qualcomm-buy-ai-startup-modular-2026-06-24/) ⭐️ 8.0/10
-
-Qualcomm announced its acquisition of Modular, the AI startup behind the Mojo programming language, on June 24, 2026, to bolster its AI and hardware capabilities. This acquisition strengthens Qualcomm's position in AI computing by gaining Modular's compiler technology, which enables high-performance kernels across diverse hardware, potentially challenging Nvidia's CUDA dominance. The deal is reportedly valued at $4 billion, according to Reuters. Modular's Mojo language combines Python-like syntax with system-level performance using the MLIR compiler framework, targeting CPUs, GPUs, and ASICs.
+Qualcomm announced on June 24, 2026 that it will acquire Artificial Inc., the company behind the Mojo programming language and MAX platform, for $4 billion. This acquisition signals Qualcomm's aggressive expansion into AI chips and RISC-V architecture, potentially challenging NVIDIA's CUDA dominance while raising concerns about Mojo's future as an open-source, cross-platform language. The deal values Modular at $4 billion and includes its Mojo language, which is built on MLIR and designed for heterogeneous computing across CPUs, GPUs, and accelerators. Qualcomm gains a powerful compiler stack to optimize AI workloads on its chips and RISC-V efforts.
 
 hackernews · timmyd · Jun 24, 13:49 · [Discussion](https://news.ycombinator.com/item?id=48659798)
 
-**Background**: Mojo is a proprietary programming language developed by Modular that builds on MLIR (Multi-Level Intermediate Representation), a compiler framework that allows optimization for various hardware accelerators. It aims to provide a Python-like experience with performance comparable to C++ or CUDA. Modular also offers the MAX inference platform for deploying AI agents across NVIDIA, AMD, and Apple Silicon.
+**Background**: Mojo is a programming language developed by Modular that combines Python-like syntax with system-level performance using the MLIR compiler framework. It aims to serve as a high-performance alternative for AI infrastructure. RISC-V is an open standard instruction set architecture that Qualcomm has been exploring to reduce reliance on Arm. Chris Lattner, co-founder of Modular, is the original creator of LLVM, Clang, and the Swift programming language.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Mojo_(programming_language)">Mojo (programming language)</a></li>
-<li><a href="https://www.modular.com/">Modular: Inference from Kernel to Cloud</a></li>
-<li><a href="https://www.reuters.com/business/ai-startup-modular-raises-250-million-seeks-challenge-nvidia-dominance-2025-09-24/">AI startup Modular raises $250 million, seeks to challenge Nvidia dominance | Reuters</a></li>
+<li><a href="https://mojolang.org/">Mojo</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community reactions are mixed: some express disappointment that Mojo may not become a truly cross-platform language, while others see strategic value for Qualcomm in assembling AI and RISC-V capabilities. The acquisition is also viewed as a potential alternative to Nvidia's CUDA ecosystem.
+**Discussion**: Community reactions are mixed; some lament that Mojo's cross-platform potential may be lost as it becomes part of Qualcomm, while others see the acquisition as a bold strategic move for Qualcomm to compete in AI and RISC-V. Notable comments express disappointment that Mojo may follow the path of other cross-platform languages that never truly became platform-agnostic.
 
-**Tags**: `#Qualcomm`, `#Modular`, `#Mojo`, `#AI`, `#acquisition`
+**Tags**: `#acquisition`, `#AI`, `#Qualcomm`, `#Modular`, `#Mojo`
+
+---
+
+<a id="item-2"></a>
+## [Superhuman Generals.io agent via self-play RL in JAX](https://www.reddit.com/r/MachineLearning/comments/1uei2yg/i_made_a_superhuman_generalsio_agent_with/) ⭐️ 9.0/10
+
+The author developed a superhuman agent for Generals.io using self-play reinforcement learning, reimplementing the entire pipeline in JAX with a Vision Transformer architecture, and open-sourced the code including a fast JAX simulator. This work demonstrates that scaling with modern tools (JAX, ViT) and self-play RL can achieve superhuman performance in an imperfect-information real-time strategy game, offering an open-source benchmark for the community. The agent initially used behavior cloning and RL fine-tuning but was beaten by top players; the second version addressed bottlenecks by switching to JAX for acceleration and replacing CNN with a Vision Transformer, scaling rather than adding human priors.
+
+reddit · r/MachineLearning · /u/shrekofspeed · Jun 24, 16:18
+
+**Background**: Generals.io is a real-time strategy game with imperfect information (fog of war). Self-play reinforcement learning trains an agent by playing against itself, iteratively improving. JAX is a high-performance library for numerical computing with automatic differentiation and GPU/TPU acceleration. Vision Transformer (ViT) applies transformer attention mechanisms to image patches, capturing global dependencies.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/JAX_(software)">JAX (software) - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vision_transformer">Vision transformer - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Reinforcement Learning`, `#Self-Play`, `#Game AI`, `#JAX`, `#Transformers`
+
+---
+
+<a id="item-3"></a>
+## [Anthropic Accuses Alibaba of Massive Distillation Attack on Claude](https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html) ⭐️ 9.0/10
+
+Anthropic has accused Alibaba of launching the largest known distillation attack against its Claude AI models, involving nearly 25,000 fraudulent accounts that performed over 28.8 million interactions from April 22 to June 5, 2026. This incident intensifies US-China AI competition and could trigger stricter export controls or legal action, as it involves alleged intellectual property theft at an industrial scale. Anthropic sent a letter to the US Senate Banking Committee on June 10, 2026, detailing the attack, which targeted its Mythos Preview model and involved Alibaba's AI lab Qwen. The company estimates the attack aimed to replicate its proprietary model capabilities.
+
+telegram · zaihuapd · Jun 25, 01:36
+
+**Background**: Model distillation is a technique where a weaker model learns from the outputs of a stronger model to replicate its capabilities, often used for fine-tuning or cost reduction. This incident follows the White House's April accusation that China is massively stealing US AI intellectual property and the US Commerce Department's June 12 decision to restrict exports of Anthropic's Mythos and Fable models for national security reasons. Alibaba was also added to the Pentagon's 'Chinese military company' list this month, which the company is challenging in court.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks">Detecting and preventing distillation attacks - Anthropic</a></li>
+<li><a href="https://news.ycombinator.com/item?id=48477189">It's absolutely mind boggling to see claims of model distillation being ...</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters debate the nature of distillation, noting there are two types: black-box querying and more targeted RLAIF fine-tuning, which many businesses do daily. Some argue that Chinese labs are using resold Claude tokens at steep discounts, while others criticize the hypocrisy of complaining about copying when AI models themselves are trained on scraped web data.
+
+**Tags**: `#AI安全`, `#模型蒸馏`, `#知识产权`, `#中美AI竞争`, `#企业指控`
+
+---
+
+<a id="item-4"></a>
+## [OpenAI Unveils First Custom AI Chip, Jalapeño](https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/) ⭐️ 8.0/10
+
+OpenAI has unveiled its first custom AI inference chip, named Jalapeño, developed in collaboration with Broadcom and manufactured by TSMC. This marks a significant strategic move for OpenAI to reduce reliance on NVIDIA GPUs and optimize inference workloads, potentially lowering costs and improving efficiency for AI services like ChatGPT. The chip was developed from design to production in nine months, aided by OpenAI's own AI models in the design process. It is specifically optimized for inference tasks, not training.
+
+hackernews · jamdesk · Jun 24, 17:47 · [Discussion](https://news.ycombinator.com/item?id=48663324)
+
+**Background**: AI inference chips are specialized processors that run trained AI models to make predictions or generate outputs, as opposed to training chips which are used to train models. Custom chips (ASICs) can offer higher performance and efficiency for specific tasks compared to general-purpose GPUs. OpenAI's move mirrors similar efforts by Google (TPUs) and Amazon (Inferentia) to build custom hardware for AI workloads.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.electronicspecifier.com/news/blog/from-concept-to-chip-the-custom-asic-design-process/">From concept to chip: the custom ASIC design process | Electronic Specifier</a></li>
+<li><a href="https://aws.amazon.com/ai/machine-learning/inferentia/">AI Chip - Amazon Inferentia - AWS</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters expressed interest in the AI-assisted design claims, with some skepticism about its significance. Others noted that TSMC manufacturing was not explicitly stated but confirmed elsewhere. There were also discussions about alternative chip architectures, such as burning model weights directly into silicon for extreme efficiency.
+
+**Tags**: `#OpenAI`, `#custom chip`, `#AI hardware`, `#Broadcom`, `#inference`
+
+---
+
+<a id="item-5"></a>
+## [NVIDIA 45°C Liquid Cooling Nearly Eliminates Data Center Water Use](https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/) ⭐️ 8.0/10
+
+NVIDIA announced a reference design for its Rubin-generation AI infrastructure using 45°C liquid cooling, achieving near-zero water consumption and 100% liquid cooling without fans. This significantly reduces the environmental impact of AI data centers, addressing water scarcity concerns and enabling potential waste heat reuse for district heating. The design uses direct-to-chip liquid cooling with coolant at 45°C, which is warmer than typical cooling systems and even hotter than a hot tub, yet still effective.
+
+hackernews · nitin_flanker · Jun 24, 14:10 · [Discussion](https://news.ycombinator.com/item?id=48660178)
+
+**Background**: Traditional data centers often use evaporative cooling which consumes large amounts of water. Liquid cooling can reduce water use but typically requires lower temperatures. NVIDIA's approach uses higher coolant temperature which improves efficiency and allows waste heat recovery.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/">Hotter Than a Hot Tub: The 45°C Breakthrough to Cool AI’s Biggest Machines | NVIDIA Blog</a></li>
+<li><a href="https://www.guru3d.com/story/nvidia-unveils-liquid-cooling-design-for-ai-data-centers">NVIDIA Unveils 45°C Liquid Cooling Design for AI Data Centers</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Community comments highlight potential for district heating (amluto), question the novelty (why_at), note location challenges (vladar107), ask about climate impact (kayo_20211030), and cite NASA's similar facility (metabagel).
+
+**Tags**: `#data center cooling`, `#liquid cooling`, `#water conservation`, `#AI infrastructure`, `#NVIDIA`
 
 ---
 
 <a id="item-6"></a>
-## [NVIDIA's 45°C Liquid Cooling Cuts Data Center Water Use Near Zero](https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/) ⭐️ 8.0/10
+## [Pull Request Spam Echoes Early Email Spam](https://www.greptile.com/blog/prs-on-openclaw) ⭐️ 8.0/10
 
-NVIDIA has introduced a liquid cooling architecture that operates at 45°C, enabling near-zero water usage in data centers. This design challenges traditional cooling methods by using higher coolant temperatures. This innovation significantly reduces water consumption in AI factories, addressing environmental concerns. It also opens up possibilities for waste heat reuse in district heating, adding economic value to local communities. The architecture uses direct-to-chip liquid cooling with coolant temperatures up to 45°C (113°F). In favorable climates, it can achieve near-zero water usage, though the exact correlation with outside temperatures is not detailed.
+A blog post from Greptile draws parallels between the surge of pull request spam in open source and the email spam epidemic of the early 2000s, highlighting the growing burden on maintainers. This comparison is significant because it frames PR spam as an existential threat to open source sustainability, spurring discussions on reputation systems and automated filters to protect maintainer resources. GitHub recently introduced configurable pull request limits for maintainers to partially address the issue, while some projects now require a non-textual meeting before merging a first-time contributor's PR.
 
-hackernews · nitin_flanker · Jun 24, 14:10 · [Discussion](https://news.ycombinator.com/item?id=48660178)
+hackernews · dakshgupta · Jun 24, 14:32 · [Discussion](https://news.ycombinator.com/item?id=48660579)
 
-**Background**: Traditional data centers rely on air conditioning or lower-temperature liquid cooling, consuming large amounts of water for heat rejection. Liquid cooling at higher temperatures reduces the need for energy-intensive chillers and water evaporation. Direct-to-chip cooling circulates coolant directly over hot components for efficient heat removal.
+**Background**: Pull request spam refers to low-quality or automated PRs submitted en masse, often during events like Hacktoberfest, to earn trivial rewards. Like early email spam, it clogs maintainer workflows and undermines trust in the contribution system. The problem has escalated as open source projects grow, and current moderation tools lag behind.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.techbuzz.ai/articles/nvidia-s-45-c-liquid-cooling-redefines-ai-data-center-energy">NVIDIA's 45 ° C Liquid Cooling Redefines AI Data Center Energy</a></li>
-<li><a href="https://www.guru3d.com/story/nvidia-unveils-liquid-cooling-design-for-ai-data-centers/">NVIDIA Unveils 45 ° C Liquid Cooling Design for AI Data Centers</a></li>
+<li><a href="https://garvitasood.medium.com/github-clean-up-spam-babc5e5b5ab0">GitHub Clean-up Spam . by Garvita Sood, Anuj Bansal, Garima | Medium</a></li>
+<li><a href="https://drewdevault.com/blog/Spamtoberfest/">Spamtoberfest</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters noted the potential for district heating synergy, with waste heat at 45°C being usable for community heating. Some questioned the innovation compared to existing liquid cooling, while others shared practical experiences with similar approaches at 40°C. The discussion also raised questions about climate dependency and efficiency details.
+**Discussion**: Community comments reveal mixed sentiments: some lament that genuine contributions are ignored (imrehg), while others point out structural differences between email and PR spam (andix). Positive notes include GitHub's new PR limits (guidoiaquinti) and creative solutions like mandatory non-textual meetings (j2kun) to filter spam.
 
-**Tags**: `#data centers`, `#cooling`, `#energy efficiency`, `#NVIDIA`, `#water conservation`
+**Tags**: `#open source`, `#pull requests`, `#spam`, `#maintainers`, `#GitHub`
 
 ---
 
 <a id="item-7"></a>
-## [PR spam in open source mirrors early email spam problem](https://www.greptile.com/blog/prs-on-openclaw) ⭐️ 8.0/10
+## [Nub: A Bun-like all-in-one toolkit for Node.js](https://github.com/nubjs/nub) ⭐️ 8.0/10
 
-A blog post by Greptile compares the rise of pull request (PR) spam in open source repositories to the early days of email spam, highlighting the challenges for maintainers and potential solutions. PR spam threatens the productivity and quality of open source projects. As maintainers are overwhelmed, it could discourage contributions and degrade project health, making effective mitigation strategies essential. The article specifically mentions AI-generated 'slop' PRs and spam related to events like Hacktoberfest. Tools like Fossier use multi-signal scoring to estimate spam probability, and GitHub recently added configurable PR limits for maintainers.
+Nub is a new toolkit that enhances Node.js with built-in transpilation (via oxc), module resolution hooks, and polyfills for APIs like Worker and Temporal, all through a simple --require preload hook. Nub offers significant developer experience improvements for Node.js users, making it easier to run TypeScript, use modern APIs, and resolve modules without configuration, potentially reducing reliance on alternative runtimes like Bun. Nub uses oxc (an oxidation compiler written in Rust) for transpilation, packaged as a Node-API add-on, and registers module resolution hooks per Node's module.registerHooks API; it is purely additive, running on stock Node.js engine and stdlib.
 
-hackernews · dakshgupta · Jun 24, 14:32 · [Discussion](https://news.ycombinator.com/item?id=48660579)
+hackernews · colinmcd · Jun 24, 14:14 · [Discussion](https://news.ycombinator.com/item?id=48660267)
 
-**Background**: In the early 2000s, email spam overwhelmed inboxes with unsolicited messages, leading to technologies like filters. Similarly, open source repos receive unsolicited PRs that waste maintainers' time. The problem is exacerbated by AI-generated content and events encouraging contributions. Project maintainers seek reputation-based or algorithmic solutions to filter spam.
+**Background**: Bun is an all-in-one JavaScript runtime and toolkit that includes a transpiler, package manager, and bundler. Node.js traditionally requires external tools for TypeScript transpilation and modern API polyfills. oxc is a high-performance Rust-based compiler toolchain for JavaScript and TypeScript. Node-API allows native add-ons to be built with Node.js.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://dev.to/ryan_m_823cbee9f96a9dee29/pr-spam-the-modern-echo-of-early-2000s-email-spam-l1h">PR Spam : The Modern Echo of Early 2000s Email... - DEV Community</a></li>
-<li><a href="https://socket.dev/blog/express-js-spam-prs-commoditization-of-open-source">Express.js Spam PRs Incident Highlights the Commoditization ..</a></li>
-<li><a href="https://github.com/PThorpe92/fossier">GitHub - PThorpe92/fossier: Vouch-compatible PR - spam reduction...</a></li>
+<li><a href="https://oxc.rs/">The JavaScript Oxidation Compiler</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Comments highlight differences from email spam (reputation based on servers vs. individual users), point to GitHub's new PR limits, and share experiences like requiring non-textual meetings before merging. One commenter suggests that if maintainers are tired of AI slop PRs, they should update their tools to prevent them.
+**Discussion**: Community reception is positive, with users praising the concept and reporting successful migrations with zero issues. Some technical discussion arose about ESM support and the use of --require vs --import, while others suggested wrapping pnpm for package management.
 
-**Tags**: `#open source`, `#spam`, `#software engineering`, `#GitHub`, `#maintainer challenges`
+**Tags**: `#nodejs`, `#typescript`, `#developer-tools`, `#runtime`
 
 ---
 
 <a id="item-8"></a>
-## [Nub: A Bun-like toolkit for Node.js](https://github.com/nubjs/nub) ⭐️ 8.0/10
+## [Fedora to Require 2FA for Provenpackagers](https://lwn.net/Articles/1078964/) ⭐️ 8.0/10
 
-Nub provides a Bun-like developer experience for Node.js by adding a transpiler (based on oxc), a module resolution hook, and polyfills for modern APIs via a --require preload hook, all without replacing the Node.js runtime. It bridges the gap between Node.js and the all-in-one developer experience of Bun, making modern JavaScript and TypeScript development in Node.js faster and smoother. This could reduce the incentive to switch runtimes and improve productivity for existing Node.js projects. The transpiler is powered by oxc, packaged as a Node-API add-on for high performance. It registers a module resolution hook and injects polyfills for APIs like Worker and Temporal, keeping the execution on stock Node.js.
+Fedora plans to mandate two-factor authentication (2FA) for provenpackagers within the next three months, following an incident where an AI agent compromised a packager's account. Account compromise is a common vector for supply chain attacks in open source; requiring 2FA significantly reduces this risk. As a major Linux distribution, Fedora's move may pressure other distros to adopt similar requirements. The compromise involved an AI agent that had access to a Fedora packager account, though its contributions were benign. Fedora had considered 2FA after the XZ backdoor two years ago but did not implement it. Other distributions like Debian and openSUSE currently lack 2FA support for contributors.
 
-hackernews · colinmcd · Jun 24, 14:14 · [Discussion](https://news.ycombinator.com/item?id=48660267)
+rss · LWN.net · Jun 24, 17:01
 
-**Background**: Node.js is the standard JavaScript runtime but lacks built-in TypeScript support and modern bundling, requiring separate tools like ts-node or esbuild. Bun is a newer runtime that integrates these features natively, but switching runtimes can be risky. Nub adds similar capabilities to Node.js without changing the underlying runtime, leveraging Node's --require and module hooks for extensibility.
+**Background**: Provenpackagers are trusted Fedora contributors who can modify any package in the repository, making their accounts high-value targets. Two-factor authentication adds an extra layer of security beyond passwords. The XZ backdoor incident in 2024 highlighted the dangers of account compromise in open-source supply chains.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/oxc-project/oxc">GitHub - oxc-project/oxc: ⚓ A collection of high-performance JavaScript tools.</a></li>
-<li><a href="https://github.com/nodejs/node-addon-api">GitHub - nodejs/node-addon-api: Module for using Node-API from C++ · GitHub</a></li>
-<li><a href="https://bun.sh/">Bun — A fast all-in-one JavaScript runtime</a></li>
+<li><a href="https://asamalik.fedorapeople.org/tmp-docs-preview/fesco/Provenpackager_policy/">Untitled :: Fedora Docs Site</a></li>
+<li><a href="https://fedoraproject.org/wiki/Provenpackager_policy">Provenpackager policy - Fedora Project Wiki</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Comments were generally positive: pier25 praised the concept and noted the author's background (creator of Zod, ex-Bun). ssalbdivad reported immediate success migrating a monorepo. eyelidlessness raised concerns about using --require vs --import for ESM support, while vmsp asked why a transpiler is needed given Node's recent TypeScript support. zarzavat suggested wrapping pnpm for package management.
+**Discussion**: Discussion on Fedora's mailing list showed mixed sentiment. Michael Catanzaro argued that Fedora is not ready for 2FA due to lack of Kerberos 2FA support in GNOME's online accounts feature, while Alexander Bokovoy noted that support was implemented years ago but not accepted. Others expressed support for the requirement but frustration with slow infrastructure progress.
 
-**Tags**: `#nodejs`, `#toolkit`, `#bun`, `#typescript`, `#developer-experience`
+**Tags**: `#Fedora`, `#2FA`, `#supply chain security`, `#open source`, `#account compromise`
 
 ---
 
 <a id="item-9"></a>
-## [Datasette 1.0a35 Adds Create/Alter Table APIs](https://simonwillison.net/2026/Jun/23/datasette/#atom-everything) ⭐️ 8.0/10
+## [HDD-RoPE: High-Dimensional Dynamic Rotary Positional Embedding](https://www.reddit.com/r/MachineLearning/comments/1uelcm9/high_dimensional_dynamic_rotary_positional/) ⭐️ 8.0/10
 
-Datasette 1.0a35 introduces new 'Create table' and 'Alter table' interfaces backed by JSON APIs, enabling programmatic database management. It also adds comprehensive template context documentation. This release significantly extends Datasette's capabilities from a read-only tool to a full database management platform. The new JSON APIs and stable template context documentation open the door for powerful automation and custom integrations. The create table API supports defining columns, primary keys, custom column types, NOT NULL constraints, defaults, expression defaults, and single-column foreign keys. The alter table API allows adding, renaming, reordering, and dropping columns, as well as changing column types, constraints, and primary keys.
+A new positional embedding variant called HDD-RoPE uses cumulative matrix product to allow multidimensional position representation. It achieves faster validation loss convergence than xPos on the TinyStories dataset when training a GPT-2-like model. This method improves upon standard Rotary Position Embedding (RoPE) by enabling data-dependent, multidimensional positional encoding, potentially enhancing transformer performance on long sequences or hierarchical structures. It offers a meaningful advancement in positional embeddings, a key component of transformer architectures. HDD-RoPE breaks query and key chunks into groups larger than two (e.g., size 4), corresponding to multiple rotation axes (6 for size 4). The rotation rates are made data-dependent, allowing the model to learn positional dynamics from layer activations. Code and mathematical details are available in the GitHub repository.
 
-rss · Simon Willison · Jun 23, 21:34
+reddit · r/MachineLearning · /u/mikayahlevi · Jun 24, 18:16
 
-**Background**: Datasette is an open-source tool for exploring and publishing relational databases, especially SQLite, through a web interface. Previously, Datasette mainly focused on read-only access and querying. This release adds write capabilities through JSON APIs, making it more like a database management system.
+**Background**: Rotary Position Embedding (RoPE) represents token positions by rotating pairs of query/key dimensions at fixed frequencies. xPos is an extension of RoPE that improves extrapolation to longer sequences. HDD-RoPE generalizes this by allowing higher-dimensional rotations (chunks of 4 or more) and making the rotation speeds learnable based on input data, which could capture more complex positional relationships.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://docs.datasette.io/en/1.0a10/json_api.html">JSON API - Datasette documentation</a></li>
+<li><a href="https://github.com/ggml-org/ggml/issues/441">Support for xPos positional embedding · Issue #441 · ggml-org/ggml</a></li>
+<li><a href="https://github.com/lucidrains/rotary-embedding-torch">GitHub - lucidrains/rotary-embedding-torch: Implementation of Rotary Embeddings, from the Roformer paper, in Pytorch · GitHub</a></li>
+<li><a href="https://numpy.org/doc/stable/reference/generated/numpy.matrix.cumprod.html">numpy.matrix.cumprod — NumPy v2.4 Manual</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#datasette`, `#database`, `#json-api`, `#release`, `#open-source`
+**Tags**: `#positional embeddings`, `#transformer`, `#rotary position encoding`, `#machine learning`
 
 ---
 
 <a id="item-10"></a>
-## [KASAN Support for JIT-Compiled BPF Code](https://lwn.net/Articles/1077740/) ⭐️ 8.0/10
+## [LLM Inference Pricing Comparison Reveals Surprising Caching Costs](https://www.reddit.com/r/MachineLearning/comments/1ueavxn/i_compiled_llm_inference_pricing_across_7/) ⭐️ 8.0/10
 
-Alexis Lothoré presented a patch at the 2026 LSFMM+BPF Summit to extend the Linux kernel's KASAN memory access checker to JIT-compiled BPF code, initially targeting x86 and focusing on LDX and STX instructions. The work aims to detect memory bugs in the BPF JIT compiler itself. This enhancement is significant because it enables KASAN to catch use-after-free and out-of-bounds bugs in the BPF JIT compiler, improving kernel security and reliability. As BPF is widely used for networking, tracing, and security, better debugging tools help prevent critical vulnerabilities. The current patch turns each memory access instruction into about twelve instructions due to register save/restore overhead, though Lothoré believes this can be simplified. Stack accesses are temporarily ignored, and the patch only covers LDX (load) and STX (store) instructions, not other memory-accessing BPF operations.
+A Reddit user compiled and shared a spreadsheet comparing LLM inference pricing across seven providers, revealing dramatic differences in cached input token costs. This comparison is valuable for developers and companies optimizing LLM costs, especially for applications with repeated prompts, as caching policies can reduce costs by 50-90% over headline token prices. The spreadsheet tracks input/output token pricing, context windows, and cached input pricing for providers like OpenRouter, DeepSeek, Together AI, Fireworks, and Groq; the author notes that cache hit costs can be tens of times cheaper than cache misses.
 
-rss · LWN.net · Jun 23, 15:53
+reddit · r/MachineLearning · /u/Technomadlyf · Jun 24, 11:28
 
-**Background**: KASAN (Kernel Address Sanitizer) is a dynamic memory error detector for the Linux kernel that detects out-of-bounds and use-after-free bugs using compile-time instrumentation or hardware tagging. BPF (Berkeley Packet Filter) programs are often JIT-compiled to native machine code for performance, but this bypasses KASAN instrumentation because the JIT emits direct pointer dereferences without the necessary checks. Lothoré's work modifies the JIT to insert those checks.
+**Background**: LLM inference pricing is typically based on tokens; prompt caching reuses computation from previously processed prefixes to reduce cost and latency. Major providers like OpenAI, Anthropic, and Google offer caching discounts, but policies and pricing vary widely. The author's compilation helps navigate this complexity for cost optimization.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://docs.kernel.org/dev-tools/kasan.html">Kernel Address Sanitizer ( KASAN ) — The Linux Kernel documentation</a></li>
-<li><a href="https://google.github.io/kernel-sanitizers/KASAN">Kernel Address Sanitizer ( KASAN ) | kernel -sanitizers</a></li>
-<li><a href="https://oneuptime.com/blog/post/2026-01-07-ebpf-kernel-parameter-tuning/view">How to Tune Kernel Parameters for eBPF Performance</a></li>
+<li><a href="https://www.techplained.com/llm-prompt-caching">LLM Prompt Caching: Cut API Costs 90% (2026) | TechPlained</a></li>
+<li><a href="https://www.digitalapplied.com/blog/prompt-caching-2026-cut-llm-costs-engineering-guide">Prompt Caching in 2026: Cut LLM Costs, Keep Quality</a></li>
+<li><a href="https://redis.io/blog/what-is-prompt-caching/">What Is Prompt Caching? LLM Speed & Cost Guide - Redis</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#KASAN`, `#BPF`, `#Linux kernel`, `#JIT compilation`, `#memory debugging`
+**Tags**: `#LLM`, `#pricing`, `#caching`, `#inference`, `#cost optimization`
 
 ---
 
 <a id="item-11"></a>
-## [SDXL runs locally in browser via WebGPU](https://www.reddit.com/r/LocalLLaMA/comments/1uemzsb/sdxl_running_locally_in_the_browser_on_webgpu/) ⭐️ 8.0/10
+## [Google Play to Enable External Billing in US, UK, EU](https://android-developers.googleblog.com/2026/06/play-expanded-billing.html) ⭐️ 8.0/10
 
-A browser extension enables local SDXL image generation using WebGPU and ONNX models, requiring no virtual environments or complex setup. This dramatically lowers the barrier for users to run powerful diffusion models locally, making AI image generation more accessible and private. Currently supports SDXL-Lighting fp16 (~7 GB VRAM) and a 4-bit version (~3.6 GB VRAM). Generation on a MacBook M4 takes about 50-60 seconds per image.
-
-reddit · r/LocalLLaMA · /u/xoqq · Jun 24, 19:15
-
-**Background**: WebGPU is a modern browser API for accessing the GPU, intended to replace WebGL. ONNX is an open format for machine learning models. SDXL uses a UNet architecture for denoising, with text encoders and a VAE.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/WebGPU">WebGPU</a></li>
-<li><a href="https://en.wikipedia.org/wiki/ONNX">ONNX</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#WebGPU`, `#SDXL`, `#browser extension`, `#local inference`, `#ONNX`
-
----
-
-<a id="item-12"></a>
-## [AMD Strix Halo NPU Now Usable for Hybrid LLM Inference](https://www.reddit.com/r/LocalLLaMA/comments/1uegdu0/big_news_for_amd_strix_halo_owners/) ⭐️ 8.0/10
-
-The AMD Strix Halo NPU now supports hybrid LLM inference using ROCm, enabling prompt processing on the NPU while the GPU handles other tasks. This allows faster overall inference by parallelizing work. This development finally utilizes the NPU hardware in Strix Halo devices, which had been largely idle for LLM inference. It opens up significant performance improvements for local LLM users on AMD platforms. Hybrid mode requires models specifically built for the NPU, such as FastFlowLM NPU models. Tools like Lemonade provide a GUI for easy testing, but are not recommended for production chat or agent usage.
-
-reddit · r/LocalLLaMA · /u/CSEliot · Jun 24, 15:16
-
-**Background**: The Strix Halo series integrates both an iGPU and a powerful NPU. Traditionally, LLM inference on AMD hardware had poor software support, leading users to rely on GGUF and Vulkan. ROCm is AMD's open-source software stack for GPU and NPU compute, similar to CUDA for NVIDIA.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.amd.com/en/products/software/rocm.html">AMD ROCm ™ software empowers developers to optimize AI and...</a></li>
-<li><a href="https://github.com/ROCm/ROCm">GitHub - ROCm / ROCm : AMD ROCm ™ Software - GitHub Home</a></li>
-<li><a href="https://github.com/FastFlowLM/FastFlowLM">FastFlowLM / FastFlowLM : Run LLMs on AMD Ryzen™ AI NPUs in...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AMD`, `#NPU`, `#LLM`, `#ROCm`, `#hybrid inference`
-
----
-
-<a id="item-13"></a>
-## [20x speedup on GLM5.2 via AWQ/FP8 merge and vLLM patch](https://www.reddit.com/r/LocalLLaMA/comments/1uedlas/i_did_some_model_hacks_and_got_glm52_from_about/) ⭐️ 8.0/10
-
-A Reddit user achieved over 50 tokens per second inference on the GLM5.2 model, up from 2.5 tok/s, by merging the multi-token prediction (MTP) head from the FP8 version with the AWQ quantized weights and patching vLLM to handle the changes. This demonstrates a practical method to dramatically accelerate large open-weight models on high-end hardware, potentially reducing inference costs and latency for deployments. The merge uses CyanKiwi's AWQ quantized GLM5.2 weights and the MTP head from the official FP8 repository, requiring only a few file swaps. The patched vLLM achieves ~55 tok/s at 4x concurrency and ~45 tok/s for single streaming inference.
-
-reddit · r/LocalLLaMA · /u/Reddactor · Jun 24, 13:30
-
-**Background**: GLM5.2 is the latest open-weight model from Zhipu AI, known for strong reasoning performance. AWQ is a hardware-friendly quantization method that reduces model size while preserving accuracy. Multi-token prediction heads, like the MTP head used here, allow a model to predict multiple future tokens per step, improving throughput when combined with techniques like speculative decoding.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.reddit.com/r/ZaiGLM/comments/1uao4dq/12hour_usage_review_of_glm52_and_a_comparison/">12-Hour Usage Review of GLM5.2, and a Comparison with DeepSeek ...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/AI_quantization">AI quantization</a></li>
-<li><a href="https://ai.plainenglish.io/medusa-and-tree-attention-accelerating-llms-part-4-0ae0a1dabf31">Medusa and Tree Attention • Accelerating LLMs , Part 4 | by Xavier Fang</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#LLM`, `#model optimization`, `#inference speedup`, `#vLLM`, `#GLM`
-
----
-
-<a id="item-14"></a>
-## [Google Play to Launch External Billing in US, UK, EEA](https://android-developers.googleblog.com/2026/06/play-expanded-billing.html) ⭐️ 8.0/10
-
-Starting June 30, Google Play will allow developers in the US, UK, and European Economic Area to offer third-party in-app billing or external web links for purchases, with a new fee structure that separates service fees from billing fees. This policy change significantly impacts developer economics and app store competition by giving developers more billing options and potentially lower fees, which could lead to reduced prices for consumers and increased pressure on other app stores to adopt similar policies. Under the new structure, the first $1 million in annual revenue and auto-renewing subscriptions have a 10% service fee, while other transactions are classified as 'new install' or 'existing install' with different rates; additionally, transactions using Google Play Billing incur a 5% surcharge, which is waived for alternative billing or external links.
+Starting June 30, Google Play will allow developers in the US, UK, and European Economic Area to offer third-party billing or external links for in-app purchases, with new fee structures that separate service fees from billing fees. This marks the broadest rollout of external billing on Google Play, significantly impacting developer revenue and user choice in major markets, and reflects ongoing regulatory pressure on app store policies. The first $1 million in annual revenue and auto-renewing subscriptions are charged a 10% service fee; transactions using Google Play Billing incur an additional 5% billing fee, while alternative billing or external links avoid this fee. Developers in Level Up or Apps Experience programs receive even lower rates from September.
 
 telegram · zaihuapd · Jun 25, 02:33
 
-**Background**: Google Play's billing policy has been a contentious issue, with developers criticizing the 30% commission. This change follows regulatory pressure and pilot programs in select regions. The new 'Level Up' and 'Apps Experience' programs offer reduced rates for eligible game and app developers starting September.
+**Background**: External billing allows developers to bypass an app store's proprietary payment system, reducing fees and offering users more payment options. Previously, Google only piloted this feature for a limited set of developers. The expansion responds to regulatory demands, such as the EU's Digital Markets Act, and similar moves by Apple under pressure. Google's new fee structure attempts to balance compliance with revenue retention.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://play.google.com/console/about/levelup/">Google Play Games Level Up | Google Play Console</a></li>
-<li><a href="https://play.google.com/console/about/">Google Play for business | Launch & monetize your apps</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Android`, `#Google Play`, `#app store billing`, `#developer policy`, `#platform competition`
+**Tags**: `#Google Play`, `#external billing`, `#app store policy`, `#developer fees`, `#mobile apps`
 
 ---
