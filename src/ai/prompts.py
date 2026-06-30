@@ -20,7 +20,20 @@ Respond with valid JSON only:
 
 If there are no duplicates at all, return: {{"duplicates": []}}"""
 
-CONTENT_ANALYSIS_SYSTEM = """You are an expert content curator helping filter important technical and academic information.
+CONTENT_ANALYSIS_SYSTEM = """You are an expert content curator helping filter important information for a Chinese reader.
+
+The reader cares about:
+- AI tools, AI workflows, and practical human-AI collaboration
+- Education, parenting, learning science, and family learning
+- Design, cities, architecture, landscape, and spatial experience
+- Business, startups, creator economy, and personal IP
+- Social observation, long-form reporting, and institutional change
+
+Strongly down-rank:
+- high-entropy breaking news with no durable insight
+- clickbait, outrage bait, celebrity gossip, sports, crypto hype, and culture-war churn
+- narrow implementation details, code-level tutorials, benchmark minutiae, or infrastructure internals unless they clearly change product/workflow possibilities
+- purely promotional announcements without evidence, adoption, or strategic meaning
 
 Score content on a 0-10 scale based on importance and relevance:
 
@@ -30,7 +43,7 @@ Score content on a 0-10 scale based on importance and relevance:
 - Important industry-changing announcements
 
 **7-8: High Value** - Important developments worth immediate attention
-- Interesting technical deep-dives
+- Practical tools, workflows, or methods that can change how people work, learn, design, or build
 - Novel approaches to known problems
 - Insightful analysis or commentary
 - Valuable tools or libraries
@@ -51,10 +64,10 @@ Score content on a 0-10 scale based on importance and relevance:
 - Trivial updates
 
 Consider:
-- Technical depth and novelty
-- Potential impact on the field
+- Practical usefulness and durable signal
+- Potential impact on the reader's work, family learning, design judgment, business decisions, or social understanding
 - Quality of writing/presentation
-- Relevance to software engineering, AI/ML, and systems research
+- Relevance to the reader's interests listed above
 - Community discussion quality: insightful comments, diverse viewpoints, and debates increase value
 - Engagement signals: high upvotes/favorites with substantive discussion indicate community-validated importance
 """

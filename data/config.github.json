@@ -1,150 +1,243 @@
 {
-  "version": "1.0",
-  "ai": {
-    "provider": "deepseek",
-    "model": "deepseek-v4-flash",
-    "base_url": "https://api.deepseek.com",
-    "api_key_env": "DEEPSEEK_API_KEY",
-    "temperature": 0.3,
-    "max_tokens": 8192,
-    "throttle_sec": 1,
-    "languages": [
-      "zh",
-      "en"
-    ],
-    "analysis_concurrency": 5,
-    "enrichment_concurrency": 5
-  },
-  "sources": {
-    "github": [
-      {
-        "type": "user_events",
-        "username": "karpathy",
-        "enabled": true
-      },
-      {
-        "type": "repo_releases",
-        "owner": "vllm-project",
-        "repo": "vllm",
-        "enabled": true
-      },
-      {
-        "type": "repo_releases",
-        "owner": "sgl-project",
-        "repo": "sglang",
-        "enabled": true
-      },
-      {
-        "type": "repo_releases",
-        "owner": "triton-lang",
-        "repo": "triton",
-        "enabled": true
-      }
-    ],
-    "hackernews": {
-      "enabled": true,
-      "fetch_top_stories": 30,
-      "min_score": 150
-    },
-    "rss": [
-      {
-        "name": "Simon Willison",
-        "url": "https://simonwillison.net/atom/everything/",
-        "enabled": true,
-        "category": "ai-tools"
-      },
-      {
-        "name": "GitHub Trending - Daily",
-        "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
-        "enabled": true,
-        "category": "github-trending"
-      },
-      {
-        "name": "Semianalysis",
-        "url": "https://newsletter.semianalysis.com/feed",
-        "enabled": true,
-        "category": "semiconductors"
-      },
-      {
-        "name": "LWN.net",
-        "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
-        "enabled": true,
-        "category": "linux-kernel"
-      }
-    ],
-    "reddit": {
-      "enabled": true,
-      "subreddits": [
-        {
-          "subreddit": "MachineLearning",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 10,
-          "min_score": 60
-        },
-        {
-          "subreddit": "LocalLLaMA",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 10,
-          "min_score": 60
-        }
-      ],
-      "users": [],
-      "fetch_comments": 10
-    },
-    "telegram": {
-      "enabled": true,
-      "channels": [
-        {
-          "channel": "zaihuapd",
-          "enabled": true,
-          "fetch_limit": 20
-        }
-      ]
-    }
-  },
-  "filtering": {
-    "ai_score_threshold": 8.0,
-    "time_window_hours": 24
-  },
-  "webhook": {
-    "enabled": true,
-    "url_env": "HORIZON_WEBHOOK_URL",
-    "delivery": "summary_and_items",
-    "overview_position": "last",
-    "platform": "feishu",
-    "layout": "collapsible",
-    "fallback_layout": "markdown",
-    "languages": [
-      "zh"
-    ],
-    "request_body": {
-      "msg_type": "interactive",
-      "card": {
-        "schema": "2.0",
-        "config": {
-          "wide_screen_mode": true
-        },
-        "header": {
-          "title": {
-            "tag": "plain_text",
-            "content": "#{message_title}"
-          },
-          "template": "blue"
-        },
-        "body": {
-          "elements": [
-            {
-              "tag": "markdown",
-              "content": "#{summary}"
-            }
-          ]
-        }
-      }
-    },
-    "headers": ""
-  }
+    "version":  "1.0",
+    "ai":  {
+               "provider":  "openai",
+               "model":  "deepseek-ai/DeepSeek-V4-Flash",
+               "base_url":  "https://api.siliconflow.cn/v1",
+               "api_key_env":  "SILICONFLOW_API_KEY",
+               "temperature":  0.2,
+               "max_tokens":  4096,
+               "throttle_sec":  0.2,
+               "languages":  [
+                                 "zh"
+                             ],
+               "analysis_concurrency":  2,
+               "enrichment_concurrency":  2
+           },
+    "sources":  {
+                    "github":  [
+
+                               ],
+                    "hackernews":  {
+                                       "min_score":  300,
+                                       "fetch_top_stories":  10,
+                                       "enabled":  false
+                                   },
+                    "rss":  [
+                                {
+                                    "category":  "design-city-landscape",
+                                    "url":  "https://www.dezeen.com/feed/",
+                                    "name":  "Dezeen",
+                                    "enabled":  true
+                                },
+                                {
+                                    "name":  "EdSurge",
+                                    "url":  "https://www.edsurge.com/articles_rss",
+                                    "enabled":  true,
+                                    "category":  "learning-parenting"
+                                },
+                                {
+                                    "category":  "learning-parenting",
+                                    "url":  "https://greatergood.berkeley.edu/rss",
+                                    "name":  "Greater Good Magazine",
+                                    "enabled":  true
+                                },
+                                {
+                                    "category":  "ai-tools",
+                                    "url":  "https://www.latent.space/feed",
+                                    "name":  "Latent Space",
+                                    "enabled":  true
+                                },
+                                {
+                                    "category":  "design-city-landscape",
+                                    "url":  "https://www.planetizen.com/frontpage/feed",
+                                    "name":  "Planetizen",
+                                    "enabled":  true
+                                },
+                                {
+                                    "name":  "ProPublica",
+                                    "url":  "https://www.propublica.org/feeds/propublica/main",
+                                    "enabled":  true,
+                                    "category":  "society-depth"
+                                },
+                                {
+                                    "category":  "society-depth",
+                                    "url":  "https://restofworld.org/feed/latest/",
+                                    "name":  "Rest of World",
+                                    "enabled":  true
+                                },
+                                {
+                                    "category":  "business-creator",
+                                    "url":  "https://seths.blog/feed/",
+                                    "name":  "Seth Godin",
+                                    "enabled":  true
+                                },
+                                {
+                                    "category":  "ai-tools",
+                                    "url":  "https://simonwillison.net/atom/everything/",
+                                    "name":  "Simon Willison",
+                                    "enabled":  true
+                                },
+                                {
+                                    "category":  "business-creator",
+                                    "url":  "https://www.ycombinator.com/blog/rss",
+                                    "name":  "Y Combinator Blog",
+                                    "enabled":  true
+                                }
+                            ],
+                    "reddit":  {
+                                   "subreddits":  [
+
+                                                  ],
+                                   "fetch_comments":  0,
+                                   "users":  [
+
+                                             ],
+                                   "enabled":  false
+                               },
+                    "telegram":  {
+                                     "channels":  [
+
+                                                  ],
+                                     "enabled":  false
+                                 },
+                    "twitter":  {
+                                    "fetch_limit":  10,
+                                    "fetch_reply_text":  false,
+                                    "max_tweets_to_expand":  10,
+                                    "reply_min_likes":  5,
+                                    "max_replies_per_tweet":  3,
+                                    "users":  [
+
+                                              ],
+                                    "enabled":  false
+                                },
+                    "openbb":  {
+                                   "fetch_filings":  false,
+                                   "filings_provider":  "sec",
+                                   "watchlists":  [
+
+                                                  ],
+                                   "enabled":  false
+                               },
+                    "ossinsight":  {
+                                       "languages":  [
+                                                         "All"
+                                                     ],
+                                       "min_stars":  10,
+                                       "max_items":  10,
+                                       "period":  "past_24_hours",
+                                       "keywords":  [
+
+                                                    ],
+                                       "enabled":  false
+                                   },
+                    "gdelt":  {
+                                  "query":  "",
+                                  "category":  "news-signals",
+                                  "timespan":  null,
+                                  "language":  null,
+                                  "mode":  "ArtList",
+                                  "enabled":  false,
+                                  "country":  null,
+                                  "max_records":  30
+                              },
+                    "google_news":  {
+                                        "max_results":  10,
+                                        "query":  "(\"AI tools\" OR \"AI workflow\" OR \"AI agents\" OR \"learning science\" OR \"parenting education\" OR \"urban design\" OR \"landscape architecture\" OR \"creator economy\" OR \"personal branding\" OR \"investigative reporting\") -crypto -celebrity -sports",
+                                        "language":  "zh-CN",
+                                        "ceid":  "CN:zh-Hans",
+                                        "category":  "news-signals",
+                                        "country":  "CN",
+                                        "enabled":  true
+                                    }
+                },
+    "filtering":  {
+                      "ai_score_threshold":  7,
+                      "time_window_hours":  24,
+                      "max_items":  8,
+                      "category_groups":  {
+                                              "ai_tools":  {
+                                                               "categories":  [
+                                                                                  "ai-tools"
+                                                                              ],
+                                                               "name":  "AI 工具与工作流",
+                                                               "limit":  2
+                                                           },
+                                              "learning":  {
+                                                               "categories":  [
+                                                                                  "learning-parenting"
+                                                                              ],
+                                                               "name":  "教育 / 亲子 / 学习",
+                                                               "limit":  2
+                                                           },
+                                              "design_city":  {
+                                                                  "categories":  [
+                                                                                     "design-city-landscape"
+                                                                                 ],
+                                                                  "name":  "设计 / 城市 / 景观",
+                                                                  "limit":  2
+                                                              },
+                                              "business_creator":  {
+                                                                       "categories":  [
+                                                                                          "business-creator"
+                                                                                      ],
+                                                                       "name":  "商业 / 创业 / 个人 IP",
+                                                                       "limit":  2
+                                                                   },
+                                              "society_depth":  {
+                                                                    "categories":  [
+                                                                                       "society-depth"
+                                                                                   ],
+                                                                    "name":  "社会观察 / 深度报道",
+                                                                    "limit":  2
+                                                                },
+                                              "signals":  {
+                                                              "categories":  [
+                                                                                 "news-signals"
+                                                                             ],
+                                                              "name":  "跨主题新闻信号",
+                                                              "limit":  2
+                                                          }
+                                          },
+                      "default_group":  "other",
+                      "default_group_limit":  1
+                  },
+    "webhook":  {
+                    "enabled":  false,
+                    "url_env":  "HORIZON_WEBHOOK_URL",
+                    "delivery":  "summary",
+                    "overview_position":  "first",
+                    "platform":  "generic",
+                    "layout":  "markdown",
+                    "fallback_layout":  "markdown",
+                    "languages":  [
+                                      "zh"
+                                  ],
+                    "request_body":  {
+                                         "msg_type":  "interactive",
+                                         "card":  {
+                                                      "config":  {
+                                                                     "wide_screen_mode":  true
+                                                                 },
+                                                      "body":  {
+                                                                   "elements":  [
+                                                                                    {
+                                                                                        "content":  "#{summary}",
+                                                                                        "tag":  "markdown"
+                                                                                    }
+                                                                                ]
+                                                               },
+                                                      "schema":  "2.0",
+                                                      "header":  {
+                                                                     "template":  "blue",
+                                                                     "title":  {
+                                                                                   "content":  "#{message_title}",
+                                                                                   "tag":  "plain_text"
+                                                                               }
+                                                                 }
+                                                  }
+                                     },
+                    "headers":  ""
+                }
 }
