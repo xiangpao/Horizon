@@ -43,6 +43,10 @@
 
   /** Set up EN/中文 language toggle as a page-level control */
   function setupLanguageToggle() {
+    var zhSection = document.getElementById('lang-zh');
+    var enSection = document.getElementById('lang-en');
+    if (!zhSection || !enSection) return;
+
     // Create toggle buttons
     var toggle = document.createElement('div');
     toggle.className = 'lang-toggle';
@@ -76,12 +80,7 @@
       }
     }
 
-    // Index page: toggle lang-section visibility
-    var zhSection = document.getElementById('lang-zh');
-    var enSection = document.getElementById('lang-en');
-
     function showSection(lang) {
-      if (!zhSection || !enSection) return;
       if (lang === 'en') {
         enSection.classList.remove('hidden');
         zhSection.classList.add('hidden');
@@ -107,11 +106,7 @@
       currentLang = lang;
       updateButtons(lang);
       try { localStorage.setItem('horizon-lang', lang); } catch (e) { /* noop */ }
-      if (zhSection && enSection) {
-        showSection(lang);
-      } else {
-        switchArticleLang(lang);
-      }
+      showSection(lang);
     }
 
     btnEn.addEventListener('click', function () { setLang('en'); });
